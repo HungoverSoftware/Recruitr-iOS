@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B34C82301D2FF062009C7E62 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34C822F1D2FF062009C7E62 /* SwipeViewController.swift */; };
+		B34C82321D2FF2D1009C7E62 /* SwipeViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34C82311D2FF2D1009C7E62 /* SwipeViewBackground.swift */; };
 		B366FA2C1D256A230079990B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366FA2B1D256A230079990B /* AppDelegate.swift */; };
 		B366FA2E1D256A230079990B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366FA2D1D256A230079990B /* FirstViewController.swift */; };
 		B366FA301D256A230079990B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366FA2F1D256A230079990B /* SecondViewController.swift */; };
@@ -16,6 +18,8 @@
 		B366FA431D256A230079990B /* Fraternity_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366FA421D256A230079990B /* Fraternity_appTests.swift */; };
 		B366FA4E1D256A230079990B /* Fraternity_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366FA4D1D256A230079990B /* Fraternity_appUITests.swift */; };
 		B366FA5C1D258DC00079990B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366FA5B1D258DC00079990B /* ThirdViewController.swift */; };
+		B3C6EE5F1D3004AA009FBB81 /* SwipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6EE5E1D3004AA009FBB81 /* SwipeView.swift */; };
+		B3C6EE611D3007DF009FBB81 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6EE601D3007DF009FBB81 /* OverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B34C822F1D2FF062009C7E62 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		B34C82311D2FF2D1009C7E62 /* SwipeViewBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewBackground.swift; sourceTree = "<group>"; };
 		B366FA281D256A230079990B /* Fraternity app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fraternity app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B366FA2B1D256A230079990B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B366FA2D1D256A230079990B /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +57,8 @@
 		B366FA4D1D256A230079990B /* Fraternity_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fraternity_appUITests.swift; sourceTree = "<group>"; };
 		B366FA4F1D256A230079990B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B366FA5B1D258DC00079990B /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		B3C6EE5E1D3004AA009FBB81 /* SwipeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeView.swift; sourceTree = "<group>"; };
+		B3C6EE601D3007DF009FBB81 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +113,10 @@
 				B366FA2D1D256A230079990B /* FirstViewController.swift */,
 				B366FA2F1D256A230079990B /* SecondViewController.swift */,
 				B366FA5B1D258DC00079990B /* ThirdViewController.swift */,
+				B34C822F1D2FF062009C7E62 /* SwipeViewController.swift */,
+				B34C82311D2FF2D1009C7E62 /* SwipeViewBackground.swift */,
+				B3C6EE5E1D3004AA009FBB81 /* SwipeView.swift */,
+				B3C6EE601D3007DF009FBB81 /* OverlayView.swift */,
 				B366FA311D256A230079990B /* Main.storyboard */,
 				B366FA341D256A230079990B /* Assets.xcassets */,
 				B366FA361D256A230079990B /* LaunchScreen.storyboard */,
@@ -262,8 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B34C82301D2FF062009C7E62 /* SwipeViewController.swift in Sources */,
+				B3C6EE611D3007DF009FBB81 /* OverlayView.swift in Sources */,
 				B366FA301D256A230079990B /* SecondViewController.swift in Sources */,
 				B366FA2C1D256A230079990B /* AppDelegate.swift in Sources */,
+				B3C6EE5F1D3004AA009FBB81 /* SwipeView.swift in Sources */,
+				B34C82321D2FF2D1009C7E62 /* SwipeViewBackground.swift in Sources */,
 				B366FA5C1D258DC00079990B /* ThirdViewController.swift in Sources */,
 				B366FA2E1D256A230079990B /* FirstViewController.swift in Sources */,
 			);
@@ -492,6 +508,7 @@
 				B366FA541D256A230079990B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B366FA551D256A230079990B /* Build configuration list for PBXNativeTarget "Fraternity appTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +517,7 @@
 				B366FA571D256A230079990B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B366FA581D256A230079990B /* Build configuration list for PBXNativeTarget "Fraternity appUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +526,7 @@
 				B366FA5A1D256A230079990B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

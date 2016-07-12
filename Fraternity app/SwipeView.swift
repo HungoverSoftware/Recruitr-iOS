@@ -50,8 +50,7 @@ let ROTATION_ANGLE = CGFloat(M_PI/8) //Higher = stronger rotation angle
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-       //fatalError("Init(coder:) has not been implemented")
+       fatalError("Init(coder:) has not been implemented")
     }
 
      

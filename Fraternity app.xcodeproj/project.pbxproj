@@ -113,7 +113,8 @@
 				B366FA2D1D256A230079990B /* FirstViewController.swift */,
 				B366FA2F1D256A230079990B /* SecondViewController.swift */,
 				B366FA5B1D258DC00079990B /* ThirdViewController.swift */,
-				B3C6EE621D3539F9009FBB81 /* Swipe Tab */,
+				B3C6EE6C1D367C22009FBB81 /* Rating View */,
+				B3C6EE621D3539F9009FBB81 /* Swipe View */,
 				B366FA311D256A230079990B /* Main.storyboard */,
 				B366FA341D256A230079990B /* Assets.xcassets */,
 				B366FA361D256A230079990B /* LaunchScreen.storyboard */,
@@ -140,7 +141,7 @@
 			path = "Fraternity appUITests";
 			sourceTree = "<group>";
 		};
-		B3C6EE621D3539F9009FBB81 /* Swipe Tab */ = {
+		B3C6EE621D3539F9009FBB81 /* Swipe View */ = {
 			isa = PBXGroup;
 			children = (
 				B3C6EE691D354625009FBB81 /* DraggableView.swift */,
@@ -148,7 +149,14 @@
 				B3C6EE651D354618009FBB81 /* SwipeViewController.swift */,
 				B3C6EE631D35460C009FBB81 /* OverlayView.swift */,
 			);
-			name = "Swipe Tab";
+			name = "Swipe View";
+			sourceTree = "<group>";
+		};
+		B3C6EE6C1D367C22009FBB81 /* Rating View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Rating View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

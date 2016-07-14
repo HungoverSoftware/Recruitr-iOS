@@ -2,68 +2,48 @@
 //  OverlayView.swift
 //  Fraternity app
 //
-//  Created by Richard on 7/8/16.
+//  Created by Richard on 7/14/16.
 //  Copyright © 2016 Richard. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-enum OverlayViewMode {
-    case None
-    case Left
-    case Right
+enum GGOverlayViewMode {
+    case GGOverlayViewModeLeft
+    case GGOverlayViewModeRight
 }
 
-class OverlayView: UIView {
-    var imageView = UIImageView()
-    var mode = OverlayViewMode.None
-    
-    override init(frame: CGRect) {
-        super.init(frame: frame);
-        setView()
-        addImageView()
-    }
+class OverlayView: UIView{
+    var _mode: GGOverlayViewMode! = GGOverlayViewMode.GGOverlayViewModeLeft
+    var imageView: UIImageView!
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
-    func setView() {
-        self.backgroundColor = UIColor.clearColor()
-    }
-    
-    func addImageView() {
-        setImageViewFrame()
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.backgroundColor = UIColor.whiteColor()
+        imageView = UIImageView(image: UIImage(named: "noButton"))
         self.addSubview(imageView)
     }
     
-    func setImageViewFrame() {
+    func setMode(mode: GGOverlayViewMode) -> Void {
+        if _mode == mode {
+            return
+        }
+        _mode = mode
+        
+        if _mode == GGOverlayViewMode.GGOverlayViewModeLeft {
+            imageView.image = UIImage(named: "noButton")
+        } else {
+            imageView.image = UIImage(named: "yesButton")
+        }
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
         imageView.frame = CGRectMake(50, 50, 100, 100)
-        
     }
-    func setMyImageView(buttonString: String) {
-        imageView.image = UIImage(named: buttonString)
-    }
-    
-    func setMode(mode: OverlayViewMode) {
-        if (self.mode == mode) {
-            return;
-        }
-        
-        self.mode = mode;
-        
-        switch (mode) {
-        case .Left:
-            setMyImageView("noButton")
-            break;
-        case .Right:
-            setMyImageView("yesButton")
-            break;
-        case .None:
-            break;
-            
-        }
-    }
-    
 }

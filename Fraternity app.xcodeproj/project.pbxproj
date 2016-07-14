@@ -16,10 +16,10 @@
 		B366FA431D256A230079990B /* Fraternity_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366FA421D256A230079990B /* Fraternity_appTests.swift */; };
 		B366FA4E1D256A230079990B /* Fraternity_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366FA4D1D256A230079990B /* Fraternity_appUITests.swift */; };
 		B366FA5C1D258DC00079990B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B366FA5B1D258DC00079990B /* ThirdViewController.swift */; };
-		B3C6EE641D35460C009FBB81 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6EE631D35460C009FBB81 /* OverlayView.swift */; };
-		B3C6EE661D354618009FBB81 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6EE651D354618009FBB81 /* SwipeViewController.swift */; };
-		B3C6EE681D35461F009FBB81 /* DraggableViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6EE671D35461F009FBB81 /* DraggableViewBackground.swift */; };
-		B3C6EE6A1D354625009FBB81 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6EE691D354625009FBB81 /* DraggableView.swift */; };
+		B3C6EE6E1D37C771009FBB81 /* DraggableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6EE6D1D37C771009FBB81 /* DraggableView.swift */; };
+		B3C6EE701D37C7B6009FBB81 /* DraggableViewBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6EE6F1D37C7B6009FBB81 /* DraggableViewBackground.swift */; };
+		B3C6EE721D37C7E1009FBB81 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6EE711D37C7E1009FBB81 /* SwipeViewController.swift */; };
+		B3C6EE761D37C84A009FBB81 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C6EE751D37C84A009FBB81 /* OverlayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,10 +55,10 @@
 		B366FA4D1D256A230079990B /* Fraternity_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fraternity_appUITests.swift; sourceTree = "<group>"; };
 		B366FA4F1D256A230079990B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B366FA5B1D258DC00079990B /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		B3C6EE631D35460C009FBB81 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OverlayView.swift; path = ../../TinderSwipeCardsSwift/TinderSwipeCardsSwift/OverlayView.swift; sourceTree = "<group>"; };
-		B3C6EE651D354618009FBB81 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwipeViewController.swift; path = ../../TinderSwipeCardsSwift/TinderSwipeCardsSwift/SwipeViewController.swift; sourceTree = "<group>"; };
-		B3C6EE671D35461F009FBB81 /* DraggableViewBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DraggableViewBackground.swift; path = ../../TinderSwipeCardsSwift/TinderSwipeCardsSwift/DraggableViewBackground.swift; sourceTree = "<group>"; };
-		B3C6EE691D354625009FBB81 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DraggableView.swift; path = ../../TinderSwipeCardsSwift/TinderSwipeCardsSwift/DraggableView.swift; sourceTree = "<group>"; };
+		B3C6EE6D1D37C771009FBB81 /* DraggableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableView.swift; sourceTree = "<group>"; };
+		B3C6EE6F1D37C7B6009FBB81 /* DraggableViewBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraggableViewBackground.swift; sourceTree = "<group>"; };
+		B3C6EE711D37C7E1009FBB81 /* SwipeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
+		B3C6EE751D37C84A009FBB81 /* OverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,10 +144,10 @@
 		B3C6EE621D3539F9009FBB81 /* Swipe View */ = {
 			isa = PBXGroup;
 			children = (
-				B3C6EE691D354625009FBB81 /* DraggableView.swift */,
-				B3C6EE671D35461F009FBB81 /* DraggableViewBackground.swift */,
-				B3C6EE651D354618009FBB81 /* SwipeViewController.swift */,
-				B3C6EE631D35460C009FBB81 /* OverlayView.swift */,
+				B3C6EE751D37C84A009FBB81 /* OverlayView.swift */,
+				B3C6EE6D1D37C771009FBB81 /* DraggableView.swift */,
+				B3C6EE6F1D37C7B6009FBB81 /* DraggableViewBackground.swift */,
+				B3C6EE711D37C7E1009FBB81 /* SwipeViewController.swift */,
 			);
 			name = "Swipe View";
 			sourceTree = "<group>";
@@ -290,14 +290,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3C6EE681D35461F009FBB81 /* DraggableViewBackground.swift in Sources */,
-				B3C6EE661D354618009FBB81 /* SwipeViewController.swift in Sources */,
-				B3C6EE6A1D354625009FBB81 /* DraggableView.swift in Sources */,
+				B3C6EE6E1D37C771009FBB81 /* DraggableView.swift in Sources */,
+				B3C6EE701D37C7B6009FBB81 /* DraggableViewBackground.swift in Sources */,
 				B366FA301D256A230079990B /* SecondViewController.swift in Sources */,
+				B3C6EE721D37C7E1009FBB81 /* SwipeViewController.swift in Sources */,
 				B366FA2C1D256A230079990B /* AppDelegate.swift in Sources */,
 				B366FA5C1D258DC00079990B /* ThirdViewController.swift in Sources */,
 				B366FA2E1D256A230079990B /* FirstViewController.swift in Sources */,
-				B3C6EE641D35460C009FBB81 /* OverlayView.swift in Sources */,
+				B3C6EE761D37C84A009FBB81 /* OverlayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +486,7 @@
 		B366FA591D256A230079990B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
 				INFOPLIST_FILE = "Fraternity appUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Fraternity-appUITests";

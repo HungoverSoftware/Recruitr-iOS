@@ -107,33 +107,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selections" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6x-qh-j4X">
-                                <rect key="frame" x="201" y="135" width="199" height="60"/>
+                                <rect key="frame" x="200" y="139" width="199" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="199" id="gS9-5Z-UVy"/>
+                                    <constraint firstAttribute="height" constant="60" id="KiL-kG-mIC"/>
+                                    <constraint firstAttribute="width" constant="199" id="pdb-lp-rmT"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wji-Xn-eFo">
-                                <rect key="frame" x="223" y="264" width="155" height="72"/>
+                                <rect key="frame" x="222" y="268" width="155" height="72"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="155" id="AkP-RU-x03"/>
+                                    <constraint firstAttribute="width" constant="155" id="Y9d-2E-2kl"/>
+                                    <constraint firstAttribute="height" constant="72" id="ZAi-zJ-roc"/>
                                 </constraints>
                                 <state key="normal" title="Swiping"/>
                                 <connections>
                                     <segue destination="CuL-HX-NS9" kind="presentation" identifier="toSwipe" id="nBa-7e-cg4"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYR-D2-IeT">
+                                <rect key="frame" x="222" y="390" width="155" height="72"/>
+                                <state key="normal" title="Rating"/>
+                                <connections>
+                                    <segue destination="ksb-70-T8r" kind="presentation" id="SWG-vO-sSM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="lRc-ez-v4K" firstAttribute="top" secondItem="Wji-Xn-eFo" secondAttribute="bottom" constant="215" id="8a0-Ki-wQM"/>
-                            <constraint firstItem="H6x-qh-j4X" firstAttribute="centerX" secondItem="ahI-Ze-eYb" secondAttribute="centerX" id="8jQ-IH-DVb"/>
-                            <constraint firstItem="Wji-Xn-eFo" firstAttribute="top" secondItem="H6x-qh-j4X" secondAttribute="bottom" constant="69" id="AKY-gu-deS"/>
-                            <constraint firstItem="H6x-qh-j4X" firstAttribute="centerX" secondItem="Wji-Xn-eFo" secondAttribute="centerX" id="Tmu-Fg-ceb"/>
-                            <constraint firstItem="H6x-qh-j4X" firstAttribute="top" secondItem="BdL-BL-2RQ" secondAttribute="bottom" constant="115" id="hgX-Sk-MxF"/>
-                            <constraint firstItem="Wji-Xn-eFo" firstAttribute="centerY" secondItem="ahI-Ze-eYb" secondAttribute="centerY" id="w03-TD-F1V"/>
+                            <constraint firstItem="lRc-ez-v4K" firstAttribute="top" secondItem="EYR-D2-IeT" secondAttribute="bottom" constant="89" id="4BD-St-aAi"/>
+                            <constraint firstItem="Wji-Xn-eFo" firstAttribute="trailing" secondItem="EYR-D2-IeT" secondAttribute="trailing" id="4vr-zb-30w"/>
+                            <constraint firstItem="H6x-qh-j4X" firstAttribute="top" secondItem="BdL-BL-2RQ" secondAttribute="bottom" constant="119" id="LSj-0O-OfP"/>
+                            <constraint firstItem="EYR-D2-IeT" firstAttribute="top" secondItem="Wji-Xn-eFo" secondAttribute="bottom" constant="50" id="Mk7-og-Sot"/>
+                            <constraint firstItem="Wji-Xn-eFo" firstAttribute="leading" secondItem="EYR-D2-IeT" secondAttribute="leading" id="Rf6-ea-tLP"/>
+                            <constraint firstItem="Wji-Xn-eFo" firstAttribute="top" secondItem="H6x-qh-j4X" secondAttribute="bottom" constant="69" id="lPM-a2-lO8"/>
+                            <constraint firstItem="H6x-qh-j4X" firstAttribute="centerX" secondItem="ahI-Ze-eYb" secondAttribute="centerX" id="qa6-lG-M9L"/>
+                            <constraint firstItem="H6x-qh-j4X" firstAttribute="centerX" secondItem="Wji-Xn-eFo" secondAttribute="centerX" id="zcZ-Gp-wex"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Third" image="third" id="O1K-Uf-pR8"/>
@@ -159,6 +170,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Uk-A6-ggi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1491" y="827"/>
+        </scene>
+        <!--Rating-->
+        <scene sceneID="30A-VD-Cag">
+            <objects>
+                <tableViewController id="ZOz-iG-p54" customClass="RatingTableViewController" customModule="Fraternity_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="81" sectionHeaderHeight="28" sectionFooterHeight="28" id="EUS-hJ-iZA">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RatingTableViewCell" rowHeight="81" id="nxM-KF-6oE" customClass="RatingTableViewCell" customModule="Fraternity_app" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nxM-KF-6oE" id="qfM-Se-eC4">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvK-GZ-T3a">
+                                            <rect key="frame" x="23" y="24" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ah6-ao-lSh" customClass="RatingControl" customModule="Fraternity_app" customModuleProvider="target">
+                                            <rect key="frame" x="113" y="13" width="227" height="53"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="nameLabel" destination="MvK-GZ-T3a" id="7fA-Lu-TgI"/>
+                                    <outlet property="ratingControl" destination="qfM-Se-eC4" id="k7c-yX-ZTk"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZOz-iG-p54" id="6jm-uy-fdY"/>
+                            <outlet property="delegate" destination="ZOz-iG-p54" id="iBp-EF-J5j"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Rating" id="nUV-CQ-faC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFg-2R-XLd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1350" y="1633"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -186,6 +242,24 @@
                 <viewControllerPlaceholder id="Ors-fc-l2j" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A2v-Y6-p4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="K64-jA-7WT">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ksb-70-T8r" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Key-t2-iLw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZOz-iG-p54" kind="relationship" relationship="rootViewController" id="Xhl-th-eMl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPy-6e-qSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="538" y="1633"/>
         </scene>
     </scenes>
     <resources>
